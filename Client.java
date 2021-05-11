@@ -31,7 +31,7 @@ class Client {
             output.start();
 
             String message = "";
-            while (!message.equals("bye")) {
+            while (!message.equals("exit")) {
                 message = reader.nextLine();
                 out.writeUTF(message);
                 // System.out.println(in.readUTF());
