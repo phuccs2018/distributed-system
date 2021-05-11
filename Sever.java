@@ -12,7 +12,7 @@ public class Server {
 
     public Server() throws Exception {
         this.socket = new ServerSocket(port);
-        System.out.println("Server is run on port " + port);
+        System.out.println(" The Server is running on port " + port);
     }
     
     public ServerSocket getSocket() {
