@@ -1,4 +1,4 @@
-package hw_27_04;
+package ex_27_04;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -23,7 +23,7 @@ public class ServerThread implements Runnable {
             DataInputStream in = new DataInputStream(client.getInputStream());
             // DataOutputStream out = new DataOutputStream(client.getOutputStream());
             String message = "";
-            while (!message.equals("Bye")) {
+            while (!message.equals("Exit")) {
                 message = in.readUTF();
                 System.out.println(clientName + ": " + message);
                 for (Socket otherClient : clientList) {
@@ -34,7 +34,7 @@ public class ServerThread implements Runnable {
                 }
             }
 
-            System.out.println("RUN here?");
+            System.out.println("Want to work here ?");
 
             in.close();
             client.close();
