@@ -5,7 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
-
+//
 class Client {
     public static void main(String[] args) {
         int serverPort = 8080;
@@ -29,7 +29,7 @@ class Client {
                 }
             });
             output.start();
-
+//
             String message = "";
             while (!message.equals("exit")) {
                 message = reader.nextLine();
