@@ -1,4 +1,4 @@
-package hw_27_04;
+package ex_27_04;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
