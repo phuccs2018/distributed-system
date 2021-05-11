@@ -28,7 +28,7 @@ public class Compute implements Runnable {
             e.printStackTrace();
         } 
 
-        System.out.println("Result is: " + (cc.getSum() + 1));
+        System.out.println("Result is: " + (c.getSum() + 1));
     }
     
 }
