@@ -1,9 +1,9 @@
-package hw_27_04;
+package ex_27_04;
 
-public class MyMath implements Runnable {
+public class Compute implements Runnable {
     private int n, sum;
 
-    public MyMath(int n) {
+    public Compute(int n) {
         this.n = n;
     }
 
@@ -18,8 +18,8 @@ public class MyMath implements Runnable {
     }
 
     public static void main(String[] args) {
-        MyMath mm = new MyMath(10);
-        Thread worker = new Thread(mm);
+        Compute c = new c(10);
+        Thread worker = new Thread(c);
         
         worker.start();
         try {
@@ -28,7 +28,7 @@ public class MyMath implements Runnable {
             e.printStackTrace();
         } 
 
-        System.out.println("Final is: " + (mm.getSum() + 1));
+        System.out.println("Result is: " + (cc.getSum() + 1));
     }
     
 }
